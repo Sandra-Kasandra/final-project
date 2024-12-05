@@ -16,7 +16,7 @@ textarea{
 }
 
 .contact_input-group input{
-    padding: 35rem;
+    padding: 0.5rem;
 }
 .contact_input-group{
     display: flex;
