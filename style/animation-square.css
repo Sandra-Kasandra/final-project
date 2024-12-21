@@ -1,0 +1,174 @@
+/*animation squares*/
+.wrap-animation{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 10px;
+    transform: rotate(-45deg);
+    max-width: 300px;
+    max-height: 240;
+}
+
+.container-animation {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+.second{
+    position: relative;
+    animation: squareRotate 1s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+.base-square {
+    position: absolute;
+    background-color: var(--orange);
+    border-radius: 2px;
+}
+
+.hover-square {
+    position: relative;
+    border: 2px solid var(--white);
+    border-radius: 2px;
+    transition: transform 0.1s ease;
+    z-index: 1;
+}
+
+.big-square-item3{
+    width: 100px;
+    height: 100px;
+}
+.small-square-item3{
+    width: 50px;
+    height: 50px;
+}
+
+.square3 {
+    position: relative;
+    left: 50px;
+}
+
+/* Animation squares */
+.wrap-animation-second {
+    height: 150px;
+}
+
+.big-square {
+    width: 120px;
+    height: 120px;;
+    transform: rotate(30deg);
+    top: -6rem;
+    right: 3rem;
+}
+
+.medium-square {
+    width: 75px;
+    height: 75px;
+    transform: rotate(30deg);
+}
+
+.small-square {
+    width: 50px;
+    height: 50px;
+    transform: rotate(30deg);
+    top: -6rem;
+}
+
+/* Base square styles */
+.base-square {
+    position: absolute;
+    background-color: var(--orange);
+    border-radius: 2px;
+}
+
+/* Hover square styles */
+.hover-square {
+    position: relative;
+    border: 2px solid var(--white);
+    border-radius: 2px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.container-animation:hover .hover-square {
+    transform: scale(1.1);
+}
+
+.wrap-animation-second {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Keyframes for Animations */
+@keyframes squareRotate {
+    from {
+        transform: rotate(0deg) scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: rotate(30deg) scale(1);
+        opacity: 1;
+    }
+}
+
+.container-animation:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.container-animation-second:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.container-animation:nth-child(3) {
+    animation-delay: 0.9s;
+}
+.container-animation-second:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+
+@media (max-width: 768px) {
+    .big-square-item3{
+        width: 80px;
+        height: 80px;
+    }
+    .small-square-item3{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .big-square {
+        display: none;
+    }
+
+    .medium-square {
+        display: none;
+    }
+
+    .small-square {
+        display: none;
+    }
+    
+    .wrap-animation-second{
+        height: 20px;
+    }
+
+    .line-container-low .long-line {
+        width: 127%;
+        position: relative;
+        left: 37px;
+    }
+    .square3 {
+        left: 30px;
+    }
+    .square4 {
+        position: relative;
+        bottom: 1rem;
+    }
+    .square1 {
+        position: relative;
+        bottom: 1rem;
+    }
+}
+

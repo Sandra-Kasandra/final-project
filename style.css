@@ -1,3 +1,9 @@
 @import url("style/navigation.css");
-@import url("style/hero.css");
+@import url("style/index.css");
 @import url("style/contact.css");
+@import url("style/base.css");
+@import url("style/footer.css");
+@import url("style/about.css");
+@import url("style/section-title.css");
+@import url("style/project.css");
+@import url("style/animation-square.css");

@@ -1,0 +1,27 @@
+:root {
+    --black: #252422;
+    --gray: #403D39;
+    --orange: #EB5E28;
+    --light-orange: #FFB598;
+    --dark-white: #CCC5B9;
+    --white: #ffffff;
+}
+
+@font-face {
+    font-family: 'Titillium Web'; 
+    src: url('./fonts/TitilliumWeb-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body{
+    background-color: var(--black);
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}

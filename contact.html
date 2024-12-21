@@ -8,37 +8,108 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Contact Page</h1>
-    <p>Here is the contact page</p>
+
+    <header>
+        <nav>
+            <p><a href="#" class="logo"><strong>sandra.\</strong>kasandra</a></p>
+            
+            <div class="screen-menu" id="screen-menu">
+                <ul  class="nav-links" id="nav-links">
+                    <li><a href="./index.html" netlify name="Index" action="index">Home</a></li>
+                    <li><a href="./about.html" netlify name="About" action="about">About</a></li>
+                    <li><a href="./project.html" netlify name="Project" action="project">Projects</a></li>
+                    <li><a href="./contact.html" netlify name="Contact" action="contact">Contact</a></li>
+                </ul>
+            </div>
+           
+            <div class="menu-icon" id="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="contact-section" class="contact-section">
+            <div class="section-title">
+                <h3>Contact</h3>
+                <div class="section-animation-square">
+                    <div class="container-animation ">
+                        <div class="base-square-title first-square"></div>
+                        <div class="hover-square-title first-square"></div>
+                    </div>
+                    <div class="container-animation">
+                        <div class="base-square-title second-square"></div>
+                        <div class="hover-square-title second-square"></div>
+                    </div>
+                </div>
+                <span class="section-line"></span>
+            </div>
+            <p>Here is the contact page</p>
+            
+            <form class="contact_form" netlify name="Contact Form" action="success">
+                <div class="contact_input-group"> 
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+        
+                <div class="contact_input-group"> 
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+        
+                <div class="contact_input-group"> 
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="tel" required>
+                </div>
+        
+                <div class="contact_input-group"> 
+                    <label for="company">Company:</label>
+                    <input id="company" name="company" required>
+                </div>
+        
+                <div class="contact_input-group contact_form-message"> 
+                    <label for="mesagge">Message:</label>
+                    <textarea id="message" name="mesagge" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
     
-    <form class="contact_form" netlify name="Contact Form" action="success">
-        <div class="contact_input-group"> 
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-
-        <div class="contact_input-group"> 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-
-        <div class="contact_input-group"> 
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="tel" required>
-        </div>
-
-        <div class="contact_input-group"> 
-            <label for="company">Company:</label>
-            <input id="company" name="company" required>
-        </div>
-
-        <div class="contact_input-group contact_form-message"> 
-            <label for="mesagge">Message:</label>
-            <textarea id="message" name="mesagge" required></textarea>
-        </div>
-
-        <button type="submit">Submit</button>
-    </form>
+            
+            <div class="wrap-animation-second">
+                <div class="container-animation second contact-square1">
+                    <div class="base-square big-square"></div>
+                    <div class="hover-square big-square"></div>
+                </div>
+                <div class="container-animation second contact-square2">
+                    <div class="base-square medium-square"></div>
+                    <div class="hover-square medium-square"></div>
+                </div>
+                <div class="container-animation second second contact-square3">
+                    <div class="base-square small-square"></div>
+                    <div class="hover-square small-square"></div>
+                </div>
+            </div>
+           
+        </section>    
+    </main>
+    <footer>
+        <p><span>&#169;</span> copyright 2024</p>
+        <ul>
+            <li>
+                <a><img src="/imges/line-md_instagram.svg" alt="instagram icon"></a>
+            </li>
+            <li>
+                <a><img src="/imges/mdi_linkedin.svg" alt="linkedin icon"></a>
+            </li>
+            <li>
+                <a><img src="/imges/mdi_github.svg" alt="github icon"></a>
+            </li>
+        </ul>
+    </footer>
+    
+    
     
 
     <script href="index.js"></script>

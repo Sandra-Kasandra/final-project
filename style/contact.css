@@ -1,8 +1,26 @@
+#contact-section{
+    margin: 5vw 15vw;
+    color: var(--white);
+    text-transform: uppercase;
+}
+#contact-section .section-line{
+    background-color: var(--white);
+}
+
+#contact-section .hover-square-title{
+    border: 2px solid var(--white);
+}
+
+#contact-section .section-title .section-line {
+    left: 30%; 
+    width: 91.2%;
+}
+
 .contact_form{
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 30rem;
-    gap:1rem;
+    gap:3rem;
 }
 
 .contact_form-message{
@@ -13,13 +31,94 @@ textarea{
     width: 100%;
     resize: none;
     min-height: 10rem;
+    border: 1px solid var(--white);
+    border-radius: 2px;
+    box-shadow: 5px 5px 5px var(--orange);
 }
 
 .contact_input-group input{
     padding: 0.5rem;
+    border: 1px solid var(--white);
+    border-radius: 2px;
+    box-shadow: 5px 5px 5px var(--orange);
 }
 .contact_input-group{
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 1rem;
+}
+
+.submit-button {
+    display: inline-block; 
+    border: 1px solid var(--orange); 
+    padding: 10px 20px;
+    border-radius: 4px; 
+    background-color: transparent;
+    color: var(--white); 
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase; 
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: var(--orange); 
+    border-color: var(--white); 
+}
+
+#contact-section .wrap-animation-second{
+    position: relative;
+    left: 60%;
+}
+
+#contact-section .wrap-animation-second .contact-square1{
+    position: relative;
+    top: -2rem;
+}
+
+#contact-section .wrap-animation-second .contact-square2{
+    position: relative;
+    top: -20rem;
+    left: 10rem;
+}
+#contact-section .wrap-animation-second .contact-square3{
+    position: relative;
+    top: -30rem;
+    left: -12rem;
+}
+
+#contact-section .hover-square{
+    left: -30px;
+}
+
+
+@media (max-width: 768px) {
+    #contact .wrap-animation-second{
+        display: none;
+        transform: translateX(-10rem);
+        width: 0;
+
+    }
+    .contact_form {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        gap: 3rem;
+    }
+
+    #contact-section .section-title .section-line {
+        left: 65%; 
+        width: 35%;
+    }
+
+    #contact-section {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #contact-section .wrap-animation-second {
+        left: 0;
+    }
+
 }
