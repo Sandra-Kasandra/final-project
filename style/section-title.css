@@ -56,7 +56,7 @@
 
 .line-container-low .long-line {
     display: inline-block;
-    width: 100%; /* Line width */
+    width: 100%; 
     height: 2px;
     background-color: var(--white);
     transform-origin: left;
