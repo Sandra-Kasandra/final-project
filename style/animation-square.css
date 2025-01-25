@@ -1,4 +1,3 @@
-/*animation squares*/
 .wrap-animation{
     display: grid;
     grid-template-columns: auto auto;
@@ -47,7 +46,6 @@
     left: 50px;
 }
 
-/* Animation squares */
 .wrap-animation-second {
     height: 150px;
 }
@@ -73,14 +71,13 @@
     top: -6rem;
 }
 
-/* Base square styles */
 .base-square {
     position: absolute;
     background-color: var(--orange);
     border-radius: 2px;
 }
 
-/* Hover square styles */
+
 .hover-square {
     position: relative;
     border: 2px solid var(--white);
@@ -88,7 +85,7 @@
     transition: transform 0.3s ease-in-out;
 }
 
-/* Hover effect */
+
 .container-animation:hover .hover-square {
     transform: scale(1.1);
 }
@@ -100,7 +97,7 @@
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Keyframes for Animations */
+
 @keyframes squareRotate {
     from {
         transform: rotate(0deg) scale(0.5);

@@ -1,0 +1,25 @@
+#success{
+    height: 70vh;
+    padding: 2rem;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+#success a{
+    text-decoration: none;
+    color: var(--white);
+    border-bottom: solid 2px var(--white);
+    padding-bottom: 0.5rem;
+}
+#success a:hover{
+    color: var(--orange);
+}
+
+@media (max-width: 768px){
+    #success{
+        height: 70vh;
+        padding: 1rem;
+        font-size: 1rem;
+        color: var(--white);
+    }
+}

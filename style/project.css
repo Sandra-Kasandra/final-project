@@ -58,6 +58,7 @@
 .project-info h4 {
     color: var(--orange);
     font-size: 24px;
+    text-transform: uppercase;
 }
 
 .project-info ul {
@@ -75,6 +76,11 @@
     color: var(--white);
     padding: 4px 8px;
     border-radius: 4px;
+}
+
+.project img{
+    width: 50%;
+    
 }
 
 @keyframes fadeIn {
@@ -96,6 +102,13 @@
     text-align: center;
     transition: background-color 0.3s, color 0.3s; 
     cursor: pointer;
+    
+}
+
+.button-read-more p a{
+    text-decoration: none;
+    color: var(--white);
+    text-transform: uppercase;
 }
 
 .button-read-more p:hover {
@@ -103,11 +116,6 @@
     border-color: var(--white); 
 }
 
-
-
-
-
-/* animation container*/
 .glitch-background {
     position: absolute;
     top: 0;
@@ -120,7 +128,7 @@
     margin-top: 20rem;
 }
 
-/* lines js */
+
 .glitch-line {
     position: absolute;
     height: 2px;
@@ -129,7 +137,7 @@
     animation: line-appear 5s linear forwards, line-flicker 2s 3s infinite ease-in-out;
 }
 
-/* animation */
+
 @keyframes line-appear {
     0% {
         opacity: 0;
@@ -185,6 +193,10 @@
     #project-section .section-title .section-line {
         left: 63%;
         width: 40%;
+    }
+
+    .glitch-background{
+        display: none;
     }
     
 }

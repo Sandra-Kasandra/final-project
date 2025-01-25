@@ -1,0 +1,52 @@
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 10;
+    inset: 0; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-content {
+    background: var(--orange);
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+
+    display: flex;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.close-modal {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--black);
+
+}
+
+.modal.show {
+    display: flex; 
+}
+
+@media (max-width: 768px) {
+
+    .modal-content {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 0;
+ 
+    }
+    .modal-content ul{
+        flex-direction: column;
+    }
+    
+}
+
+

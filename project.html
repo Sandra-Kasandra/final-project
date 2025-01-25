@@ -8,30 +8,23 @@
 </head>
 <body>
     <header>
-        <nav>
-            <p><a href="#" class="logo"><strong>sandra.\</strong>kasandra</a></p>
-            
-            <div class="screen-menu" id="screen-menu">
-                <ul  class="nav-links" id="nav-links">
+        <p><a href="./index.html" class="logo"><strong>sandra.\</strong>kasandra</a></p>
+            <nav id="main-menu">
+                <button id="hamburger">
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                </button>
+                <ul>
                     <li><a href="./index.html" netlify name="Index" action="index">Home</a></li>
                     <li><a href="./about.html" netlify name="About" action="about">About</a></li>
                     <li><a href="./project.html" netlify name="Project" action="project">Projects</a></li>
                     <li><a href="./contact.html" netlify name="Contact" action="contact">Contact</a></li>
                 </ul>
-            </div>
-           
-            <div class="menu-icon" id="menu-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
+            </nav>
     </header>
 
     <main>
-        
         <section id="project-section" class="project-section"> 
-            
             <div class="section-title">
                 <h3>Projects</h3>
                 <div class="section-animation-square">
@@ -51,44 +44,81 @@
             <div class="projects ">
                 <div class="glitch-background"></div>
                 <div class="project appearance">
-                    <img src="/imges/Mask group.png" alt="project img">
+                    <img src="/imges/project-web.png" alt="project img">
                     <span class="split-line"></span>
                     <div class="project-info">
-                        <h4>Web project</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur. 
-                            At sollicitudin enim eget nibh ipsum nisl commodo egestas. 
-                            Facilisi sagittis cursus cursus est fringilla. 
+                        <h4>Flawless Glow</h4>
+                        <p>Flawless is a web project created as part of a school assignment. It aimed to design a visually appealing,
+                             functional website using HTML, 
+                            SASS, and JavaScript. The project was later implemented into WordPress to create a dynamic experience. 
                         </p>
                         <ul>
                             <li>#javascript</li>
                             <li>#html</li>
-                            <li>#css</li>
+                            <li>#sass</li>
                         </ul>
                         <div class="button-read-more">
-                            <p><a href="#">Read more...</a></p>
+                            <p><a href="#" class="open-modal" data-modal="project-1">Read more...</a></p>
                         </div>
-                    </div> 
+                    </div>
+                    <div id="project-1" class="modal hidden">
+                        <div class="modal-content">
+                            <button class="close-modal">&times;</button>
+                            <div class="project-info">
+                                <h2>Project Details</h2>
+                                <p>The "Flawless" project is a beauty and skincare website created as part of a school project. 
+                                    The primary goal was to design an elegant and user-friendly platform where users could explore beauty and skincare services. 
+                                    I used SASS for styling, focusing on making the site visually appealing while maintaining a clean and functional layout. 
+                                    HTML and JavaScript were used to ensure interactive features like forms and animations, and the final site was integrated 
+                                    into WordPress to make content management easier.
+                                     All of the design was done by me in Figma, ensuring a unique and tailored look for the site.</p>
+                                    
+                                <ul>
+                                    <li>Custom Design in Figma, providing a unique and modern aesthetic</li>
+                                    <li>Implemented SASS for clean, efficient styling and responsiveness</li>
+                                    <li>JavaScript used for interactive features like form validation and animations</li>
+                                    <li>WordPress integration for easy content updates and management</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
                 <span class="split-line-skills"></span>
                 <div class="project appearance">
                     <img src="/imges/Mask group.png" alt="project img">
                     <span class="split-line"></span>
                     <div class="project-info">
-                        <h4>Web project</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur. 
-                            At sollicitudin enim eget nibh ipsum nisl commodo egestas. 
-                            Facilisi sagittis cursus cursus est fringilla. 
+                        <h4>Get Things Done</h4>
+                        <p>Get Things Done is a simple and user-friendly 
+                            task management tool designed to help individuals stay organized and productive. 
                         </p>
                         <ul>
-                            <li>#javascript</li>
-                            <li>#html</li>
-                            <li>#css</li>
+                            <li>#figma</li>
                         </ul>
                        <div class="button-read-more">
-                            <p><a href="#">Read more...</a></p>
+                        <p><a href="#" class="open-modal" data-modal="project-2">Read more...</a></p>
                         </div> 
                     </div>
-                    
+                    <div id="project-2" class="modal">
+                        <div class="modal-content">
+                            <button class="close-modal">&times;</button>
+                            <div class="project-info">
+
+                                <h2>Project Details</h2>
+                                <p>This project was designed solely to improve my design skills in Figma. I focused on creating a user-friendly and visually 
+                                    appealing interface for a task management platform. The design was entirely conceptual, with no development or code involved.
+                                    This project allowed me to experiment with layout, typography, and color schemes to create a functional and attractive UI. 
+                                    It was a valuable exercise in honing my design skills and understanding user experience principles.</p>
+                                <ul>
+                                    <li>Clean and minimalistic UI</li>
+                                    <li>Focused on task management functionality</li>
+                                    <li>Designed using Figma for practical experience</li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

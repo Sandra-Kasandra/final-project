@@ -30,8 +30,6 @@ export function setupSquareAnimation() {
 
             hoverSquare.style.transform = `translate(${moveX}px, ${moveY}px)`;
         }
-
-        // Attach the event listener for this container
         document.addEventListener('mousemove', moveSquare);
     });
 }
